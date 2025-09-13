@@ -1,0 +1,85 @@
+import { Tabs } from 'expo-router';
+import React from 'react';
+import { AntDesign, Ionicons } from '@expo/vector-icons';
+
+function Layout() {
+    return (
+        <Tabs>
+            <Tabs.Screen 
+                name="index" 
+                options = {{ 
+                    headerShown: false, 
+                    title: "Home",
+
+                    tabBarIcon: ({color, size}) => (
+                        <AntDesign name="home" color={color} size={size} />
+                    ),
+                }}
+            />
+
+            <Tabs.Screen 
+                name="exercises" 
+                options = {{ 
+                    headerShown: false, 
+                    title: "Exercises",
+
+                    tabBarIcon: ({color, size}) => (
+                        <AntDesign name="book" color={color} size={size} />
+                    ),
+                }}
+            />
+
+            <Tabs.Screen 
+                name="workout" 
+                options = {{ 
+                    headerShown: false, 
+                    title: "Workout",
+
+                    tabBarIcon: ({color, size}) => (
+                        <Ionicons name="add-circle" color={color} size={size} />
+                    ),
+                }}
+            />
+
+            <Tabs.Screen 
+                name="active-workout" 
+                options = {{ 
+                    headerShown: false, 
+                    title: "Active Workout",
+                    href: null,
+
+                    tabBarStyle: {
+                        display: "none",
+                    },
+                }}
+            />
+
+            <Tabs.Screen 
+                name="history" 
+                options = {{ 
+                    headerShown: false, 
+                    title: "History",
+
+                    tabBarIcon: ({color, size}) => (
+                        <Ionicons name="time" color={color} size={size} />
+                    ),
+                }}
+            />
+
+            <Tabs.Screen 
+                name="profile/index" 
+                options = {{ 
+                    headerShown: false, 
+                    title: "Profile",
+
+                    /* tabBarIcon: ({color, size}) => (
+                        <Ionicons name="person" color={color} size={size} />
+                    ), */
+                }}
+            />
+
+        </Tabs>
+    );
+}
+
+export default Layout;
