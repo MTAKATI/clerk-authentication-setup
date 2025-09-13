@@ -1,3 +1,8 @@
+# Run the "setup.sh": Automatically installs packages
+```bash setup.sh```
+
+
+
 ## 📦 Packages You Need to Install (Expo SDK 54)
 
 When you clone your repo (`clerk-authentication-setup`), make sure you have these versions (these were the ones fixed in your debug session):
@@ -118,3 +123,4 @@ Whenever you clone a React Native/Expo repo:
 5. **Clear cache** with `npx expo start -c`.
 
 ---
+
