@@ -62,7 +62,7 @@ export default function SignUpScreen() {
   // Show verification screen if code is pending
   if (pendingVerification) {
     return (
-      <SafeAreaView className="flex-1 items-center justify-center bg-gray-50">
+      <SafeAreaView className="flex-1 items-center justify-center">
         <KeyboardAvoidingView
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
           className="flex-1"

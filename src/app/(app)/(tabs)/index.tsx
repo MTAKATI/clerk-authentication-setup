@@ -4,7 +4,7 @@ import { SafeAreaView, Text, View } from "react-native";
 
 export default function Page() {
   return (
-    <SafeAreaView className="flex flex-1">
+    <SafeAreaView className="flex-1">
       <Header />
       <Content />
     </SafeAreaView>
@@ -28,8 +28,8 @@ function Content() {
               This template sets up Expo and Tailwind (NativeWind) allowing you
               to quickly get started with my YouTube tutorial!
             </Text>
-            <Link href="https://www.youtube.com/@sonnysangha" target="_blank">
-              <Text className="text-lg text-center text-blue-500 hover:text-blue-700 underline md:text-xl dark:text-blue-400 dark:hover:text-blue-300">
+            <Link href="https://www.youtube.com/@sonnysangha" target="_blank" className="text-lg text-center text-blue-500 underline md:text-xl dark:text-blue-400">
+              <Text>
                 https://www.youtube.com/@sonnysangha
               </Text>
             </Link>
@@ -37,30 +37,30 @@ function Content() {
             <View className="gap-4">
               <Link
                 suppressHighlighting
-                className="flex h-9 items-center justify-center overflow-hidden rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 web:shadow ios:shadow transition-colors hover:bg-gray-900/90 active:bg-gray-400/90 web:focus-visible:outline-none web:focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="flex h-9 items-center justify-center overflow-hidden rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-gray-50 web:shadow ios:shadow disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900"
                 href="https://www.youtube.com/@sonnysangha"
               >
-                Visit my YouTube Channel
+                <Text className="text-gray-50 dark:text-gray-900">Visit my YouTube Channel</Text>
               </Link>
             </View>
 
             <View className="gap-4">
               <Link
                 suppressHighlighting
-                className="flex h-9 items-center justify-center overflow-hidden rounded-md bg-red-700 px-4 py-2 text-sm font-medium text-gray-50 web:shadow ios:shadow transition-colors hover:bg-gray-900/90 active:bg-gray-400/90 web:focus-visible:outline-none web:focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="flex h-9 items-center justify-center overflow-hidden rounded-md bg-red-700 px-4 py-2 text-sm font-medium text-gray-50 web:shadow ios:shadow disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900"
                 href="https://www.papareact.com/course"
               >
-                Get the Complete Source Code (Plus 60+ builds) ❤️
+                <Text className="text-gray-50 dark:text-gray-900">Get the Complete Source Code (Plus 60+ builds) ❤️</Text>
               </Link>
             </View>
 
             <View className="gap-4">
               <Link
                 suppressHighlighting
-                className="flex h-9 items-center justify-center overflow-hidden rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-gray-50 web:shadow ios:shadow transition-colors hover:bg-gray-900/90 active:bg-gray-400/90 web:focus-visible:outline-none web:focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="flex h-9 items-center justify-center overflow-hidden rounded-md bg-green-700 px-4 py-2 text-sm font-medium text-gray-50 web:shadow ios:shadow disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900"
                 href="https://www.papareact.com/course"
               >
-                Join My Course & Learn to Code with AI 💚 (1000+ Students)
+                <Text className="text-gray-50 dark:text-gray-900">Join My Course & Learn to Code with AI 💚 (1000+ Students)</Text>
               </Link>
             </View>
           </View>
@@ -79,10 +79,10 @@ function Header() {
         </Link>
         <View className="">
           <Link
-            className="text-md font-medium hover:underline web:underline-offset-4"
+            className="text-md font-medium web:underline-offset-4"
             href="https://www.papareact.com/course"
           >
-            Join My Course ❤️
+            <Text>Join My Course ❤️</Text>
           </Link>
         </View>
       </View>

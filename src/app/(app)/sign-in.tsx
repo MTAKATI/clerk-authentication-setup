@@ -50,7 +50,7 @@ export default function SignIn() {
   }
 
   return (
-    <SafeAreaView>
+    <SafeAreaView className='flex-1 bg-gray-50'>
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         className='flex-1'
